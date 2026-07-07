@@ -44,8 +44,12 @@ async function loadMenu() {
 
         button.onclick = () => {
             viewer.src = file;
-        };
 
+            // Hide menu after selecting an article on mobile
+            if (window.innerWidth <= 600) {
+                menu.classList.add("hidden");
+            }
+        };
         menu.appendChild(button);
     }
 }
