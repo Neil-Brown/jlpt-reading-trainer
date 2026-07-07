@@ -98,6 +98,8 @@ yomitanHelp.onclick = () => {
     yomitanModal.style.display = "block";
 };
 
+
+
 closeYomitan.onclick = () => {
     yomitanModal.style.display = "none";
 };
