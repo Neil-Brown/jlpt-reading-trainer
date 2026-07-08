@@ -162,7 +162,6 @@ button{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 20px 0;
     font-size: 1.8rem;
     font-weight: 700;
     color: white;
@@ -186,5 +185,44 @@ button{
     .title-text {
         white-space: normal;
         font-size:1.5rem
+    }
+}
+
+body {
+    font-family: "Yu Gothic", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #222;
+    background: #fff;
+}
+
+#articleTitle {
+    margin:0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1f2937;
+}
+
+#articleDate {
+    margin-bottom: 24px;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+#articleBody {
+    margin: 10rem;
+    background:red;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+@media (max-width: 600px) {
+
+    #articleTitle {
+        font-size: 1rem;
     }
 }

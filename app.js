@@ -68,12 +68,62 @@ function applyZoom() {
     }
 
     style.textContent = `
+        html {
+            font-size: ${zoom}%;
+        }
+
         body {
-            zoom: ${zoom}%;
+            font-family: "Yu Gothic", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0 auto;
+            padding: 24px;
+            line-height: 1.8;
+            color: #222;
+            background: #fff;
+        }
+
+        #articleTitle {
+            margin: 0 0 12px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #1f2937;
+        }
+
+        #articleDate {
+            margin-bottom: 24px;
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        #articleBody {
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: inherit;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            #articleTitle {
+                font-size: 1.5rem;
+            }
+
+            #articleDate {
+                margin-bottom: .8rem;
+            }
+
+            #articleBody {
+                line-height: 1.7;
+                font-size: 1rem;
+            }
         }
     `;
 }
-
 const toggle = document.getElementById("toggle");
 
 toggle.addEventListener("click", () => {
