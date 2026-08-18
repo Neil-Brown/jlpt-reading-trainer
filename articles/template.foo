@@ -1,0 +1,17 @@
+
+
+<h1 id="articleTitle">
+</h1>
+
+<div id="articleDate">
+</div>
+
+<pre id="articleBody">
+</pre>
+
+<!--
+javascript:(function(){
+  const text = document.querySelector("article")?.innerText || document.body.innerText;
+  document.body.innerHTML = "<pre style='white-space:pre-wrap;font-size:18px;line-height:1.6'>" + text + "</pre>";
+})();
+-->
