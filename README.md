@@ -4,6 +4,9 @@
 
 A lightweight web application for practicing **JLPT reading comprehension** with authentic Japanese news articles.
 
+Demo:
+https://neil-brown.github.io/jlpt-reading-trainer/
+
 The goal of this project is to provide a clean, distraction-free reading environment where learners can improve their Japanese through extensive reading.
 
 ---
@@ -78,9 +81,32 @@ This project is designed to work with the **Yomitan** browser extension.
 
 ## 🤝 Contributing
 
-Contributions, bug reports, and feature requests are welcome.
+<p>
+Contributions are welcome! You can help improve this project in several ways:
+</p>
 
-If you have suggestions for improving the reading experience or adding new features, feel free to open an issue or submit a pull request.
+<ul>
+  <li>
+    <strong>Submit articles</strong> — Share JLPT-related learning articles, explanations, reading materials, or useful resources.
+    Articles should be submitted using the following format:
+  </li>
+</ul>
+
+<pre>
+&lt;h1 id="articleTitle"&gt;Article Title&lt;/h1&gt;
+
+&lt;div id="articleDate"&gt;YYYY-MM-DD&lt;/div&gt;
+
+&lt;pre id="articleBody"&gt;
+Article content goes here...
+&lt;/pre&gt;
+</pre>
+
+<ul>
+  <li><strong>Report bugs</strong> — Found an issue? Please open a GitHub Issue with details about the problem and steps to reproduce it.</li>
+  <li><strong>Suggest improvements</strong> — Ideas for new features, content, or usability improvements are welcome.</li>
+  <li><strong>Submit code changes</strong> — Pull requests are welcome for improvements and fixes.</li>
+</ul>
 
 ---
 
