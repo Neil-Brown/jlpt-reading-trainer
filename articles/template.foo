@@ -9,6 +9,18 @@
 <pre id="articleBody">
 </pre>
 
+<section class="vocabulary">
+  <h2>Reference Vocabulary</h2>
+
+  <dl>
+    <div class="vocab-item">
+      <dt><ruby>KANJI<rt>HIRAGANA</rt></ruby></dt>
+      <dd>ENGLISH</dd>
+    </div>
+
+  </dl>
+</section>
+
 <!--
 javascript:(function(){
   const text = document.querySelector("article")?.innerText || document.body.innerText;
