@@ -1,0 +1,254 @@
+<h1 id="articleTitle">
+学生寮の案内
+</h1>
+
+<div id="articleDate">
+  2026年8月31日
+</div>
+
+<pre id="articleBody">
+<style>
+.dormitory-list {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.dormitory-list th,
+.dormitory-list td {
+  border: 1px solid #aaa;
+  padding: 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.dormitory-list th {
+  font-weight: bold;
+}
+
+.dormitory-list .dorm-name {
+  font-weight: bold;
+}
+
+.dormitory-notes {
+  line-height: 1.7;
+}
+
+/* On narrow screens, turn each row into a readable card */
+@media (max-width: 700px) {
+  .dormitory-list,
+  .dormitory-list thead,
+  .dormitory-list tbody,
+  .dormitory-list tr,
+  .dormitory-list th,
+  .dormitory-list td {
+    display: block;
+  }
+
+  .dormitory-list thead {
+    display: none;
+  }
+
+  .dormitory-list tr {
+    border: 1px solid #aaa;
+    margin-bottom: 1.2em;
+    padding: 0.4em 0;
+  }
+
+  .dormitory-list td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 0.55em 0.8em 0.55em 7em;
+    position: relative;
+    min-height: 1.6em;
+    box-sizing: border-box;
+  }
+
+  .dormitory-list td:last-child {
+    border-bottom: none;
+  }
+
+  .dormitory-list td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.8em;
+    top: 0.55em;
+    width: 5.5em;
+    font-weight: bold;
+  }
+
+  .dormitory-list .dorm-name {
+    font-size: 1.1rem;
+    padding-left: 0.8em;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .dormitory-list .dorm-name::before {
+    display: none;
+  }
+}
+</style>
+
+<table class="dormitory-list">
+  <thead>
+    <tr>
+      <th>寮名</th>
+      <th>建物</th>
+      <th>対象</th>
+      <th>部屋・設備</th>
+      <th>定員</th>
+      <th>入寮期間</th>
+      <th>月額料金</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td class="dorm-name" data-label="寮名">レジデンス桜</td>
+      <td data-label="建物">鉄筋5階建て<br>2000年築</td>
+      <td data-label="対象">学部1・2年生<br>男子学生</td>
+      <td data-label="部屋・設備">一人部屋<br>エアコン付き</td>
+      <td data-label="定員">50名</td>
+      <td data-label="入寮期間">2年間</td>
+      <td data-label="月額料金">6,800円</td>
+    </tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">レジデンス緑</td>
+  <td data-label="建物">鉄筋5階建て<br>1999年築</td>
+  <td data-label="対象">学部1・2年生<br>女子学生</td>
+  <td data-label="部屋・設備">一人部屋<br>エアコン付き</td>
+  <td data-label="定員">50名</td>
+  <td data-label="入寮期間">2年間</td>
+  <td data-label="月額料金">6,800円</td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">あさひ寮</td>
+  <td data-label="建物">鉄筋5階建て<br>1982年築</td>
+  <td data-label="対象">学部1・2年生<br>男子学生</td>
+  <td data-label="部屋・設備">一人部屋</td>
+  <td data-label="定員">100名</td>
+  <td data-label="入寮期間">2年間</td>
+  <td data-label="月額料金">4,000円</td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">ゆうやけ寮</td>
+  <td data-label="建物">鉄筋5階建て<br>1981年築</td>
+  <td data-label="対象">学部3～6年生<br>大学院の男子学生</td>
+  <td data-label="部屋・設備">
+    一人部屋（エアコン付き）<br>
+    二人部屋（エアコン付き）
+  </td>
+  <td data-label="定員">
+    一人部屋：60名<br>
+    二人部屋：70名
+  </td>
+  <td data-label="入寮期間">2年間</td>
+  <td data-label="月額料金">
+    一人部屋：5,000円<br>
+    二人部屋：4,800円
+  </td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">かえで寮</td>
+  <td data-label="建物">鉄筋4階建て<br>1981年築</td>
+  <td data-label="対象">学部1～6年生<br>大学院の女子学生</td>
+  <td data-label="部屋・設備">一人部屋<br>エアコン付き</td>
+  <td data-label="定員">64名</td>
+  <td data-label="入寮期間">
+    4年間<br>
+    （6年間※）
+  </td>
+  <td data-label="月額料金">4,800円</td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">白波寮</td>
+  <td data-label="建物">鉄筋2階建て<br>1975年築</td>
+  <td data-label="対象">学部1～6年生<br>大学院の男子学生</td>
+  <td data-label="部屋・設備">
+    一人部屋<br>
+    二人部屋
+  </td>
+  <td data-label="定員">
+    一人部屋：22名<br>
+    二人部屋：60名
+  </td>
+  <td data-label="入寮期間">
+    2年間<br>
+    （4年間※）
+  </td>
+  <td data-label="月額料金">
+    一人部屋：4,000円<br>
+    二人部屋：3,500円
+  </td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">清風寮</td>
+  <td data-label="建物">鉄筋4階建て<br>1975年築</td>
+  <td data-label="対象">学部3～6年生<br>大学院の男子学生</td>
+  <td data-label="部屋・設備">一人部屋</td>
+  <td data-label="定員">96名</td>
+  <td data-label="入寮期間">
+    4年間<br>
+    （6年間※）
+  </td>
+  <td data-label="月額料金">4,500円</td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">大空寮</td>
+  <td data-label="建物">鉄筋4階建て<br>1970年築</td>
+  <td data-label="対象">学部1～6年生<br>大学院の男子学生</td>
+  <td data-label="部屋・設備">四人部屋</td>
+  <td data-label="定員">160名</td>
+  <td data-label="入寮期間">
+    4年間<br>
+    （6年間※）
+  </td>
+  <td data-label="月額料金">700円</td>
+</tr>
+
+<tr>
+  <td class="dorm-name" data-label="寮名">青梅寮</td>
+  <td data-label="建物">鉄筋4階建て<br>1970年築</td>
+  <td data-label="対象">学部1～6年生<br>大学院の女子学生</td>
+  <td data-label="部屋・設備">四人部屋</td>
+  <td data-label="定員">160名</td>
+  <td data-label="入寮期間">
+    4年間<br>
+    （6年間※）
+  </td>
+  <td data-label="月額料金">700円</td>
+</tr>
+
+
+  </tbody>
+</table>
+
+<div class="dormitory-notes">
+  <p>※医学部・歯学部・薬学部薬学科では、学部5・6年次の学生も対象に含まれます。</p>
+
+  <p>※「6年間」「4年間」と記載されている期間は、医学部・歯学部・薬学部薬学科の学生に適用されます。</p>
+</div>
+</pre>
+
+<section class="vocabulary">
+  <h2>Reference Vocabulary</h2>
+
+  <dl>
+  </dl>
+</section>
+
+<!--
+javascript:(function(){
+  const text = document.querySelector("article")?.innerText || document.body.innerText;
+  document.body.innerHTML = "<pre style='white-space:pre-wrap;font-size:18px;line-height:1.6'>" + text + "</pre>";
+})();
+-->
