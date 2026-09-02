@@ -21,6 +21,32 @@
   </dl>
 </section>
 
+<section class="reading-quiz">
+
+<h2></h2>
+
+<div class="question" data-answer="b">
+
+<p>
+<strong>問題1.</strong>
+</p>
+
+<div class="answers">
+
+<label>
+<input type="radio" name="q1" value="a">
+</label>
+
+
+</div>
+</div>
+
+<button id="checkAnswers">答えを確認</button>
+
+<div id="quizResults"></div>
+
+</section>
+
 <!--
 javascript:(function(){
   const text = document.querySelector("article")?.innerText || document.body.innerText;
