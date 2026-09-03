@@ -1,95 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CNYZ3V8HC"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
         gtag('config', 'G-7CNYZ3V8HC');
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>日本語能力試験 読解練習</title>
+
     <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-<h1 class="site-title">
-  <img src="./img/favicon.svg" alt="logo" class="site-logo">
-  <span class="title-text">日本語能力試験 読解練習</span>
-</h1>
 
-<div id="toolbar">
-    <button id="toggle">☰</button>
-    <button id="zoomOut">A−</button>
-    <button id="zoomIn">A+</button>
-    <button id="yomitanHelp">📖 Yomitan</button>
-    <input
-        id="search"
-        type="text"
-        placeholder="Search articles...">
-</div>
 
-<div id="container">
+<body class="home-page">
 
-    <div id="menu"></div>
 
-    <iframe id="viewer"></iframe>
+    <header class="home-header">
 
-</div>
-<div id="yomitanModal" class="modal">
+        <h1 class="site-title">
 
-    <div class="modalContent">
+            <img
+                src="./img/favicon.svg"
+                alt="logo"
+                class="site-logo">
 
-        <button id="closeYomitan" class="close">✕</button>
+            <span class="title-text">
+                日本語能力試験 読解練習
+            </span>
 
-        <h2>Yomitanを使って読む</h2>
+        </h1>
 
-        <p>
-            このサイトは <strong>Yomitan</strong> に対応しています。
-            Yomitanを使うと、記事を読みながら単語にマウスを合わせるだけで、
-            意味・読み方・例文をすぐに確認できます。
-        </p>
+    </header>
 
-        <p style="text-align:center; margin:24px 0;">
-            <a href="https://yomitan.wiki/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="installButton">
-                📥 Yomitanをインストール
-            </a>
-        </p>
 
-        <h3>使い方</h3>
+    <main class="home-main">
 
-        <ol>
-            <li>Yomitanをインストールします。</li>
-            <li>日本語辞書（Japanese → Englishなど）を追加します。</li>
-            <li>記事の単語にマウスを合わせると意味が表示されます。</li>
-        </ol>
+        <div class="home-search">
 
-        <h3>おすすめ設定</h3>
+            <input
+                id="search"
+                type="text"
+                placeholder="Search articles..."
+                aria-label="Search articles">
 
-        <ul>
-            <li>ポップアップ表示を有効にする</li>
-            <li>日本語辞書を優先する</li>
-            <li>例文表示を有効にする</li>
-        </ul>
+        </div>
 
-        <p>
-            分からない単語はAnkiへ追加して復習することもできます。
-        </p>
 
-    </div>
+        <div id="menu"></div>
 
-</div>
-<script src="app.js"></script>
+    </main>
+
+
+    <script src="app.js"></script>
 
 </body>
+
 </html>
