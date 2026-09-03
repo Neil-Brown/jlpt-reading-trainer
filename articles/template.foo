@@ -1,55 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>ARTICLE TITLE</title>
+    <meta name="description" content="ARTICLE DESCRIPTION">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="article-page">
 
 <h1 id="articleTitle">
+ARTICLE TITLE
 </h1>
 
 <div id="articleDate">
+ARTICLE DATE
 </div>
 
 <pre id="articleBody">
+
+ARTICLE TEXT
+
 </pre>
 
-<section class="vocabulary">
-  <h2>Reference Vocabulary</h2>
-
-  <dl>
-    <div class="vocab-item">
-      <dt><ruby>KANJI<rt>HIRAGANA</rt></ruby></dt>
-      <dd>ENGLISH</dd>
-    </div>
-
-  </dl>
-</section>
-
-<section class="reading-quiz">
-
-<h2></h2>
-
-<div class="question" data-answer="b">
-
-<p>
-<strong>問題1.</strong>
-</p>
-
-<div class="answers">
-
-<label>
-<input type="radio" name="q1" value="a">
-</label>
-
-
-</div>
-</div>
-
-<button id="checkAnswers">答えを確認</button>
-
-<div id="quizResults"></div>
-
-</section>
-
-<!--
-javascript:(function(){
-  const text = document.querySelector("article")?.innerText || document.body.innerText;
-  document.body.innerHTML = "<pre style='white-space:pre-wrap;font-size:18px;line-height:1.6'>" + text + "</pre>";
-})();
--->
+</body>
+</html>
