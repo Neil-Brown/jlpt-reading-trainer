@@ -24,6 +24,9 @@ h1 {
 
 button {
     cursor: pointer;
+    font-size:1rem;
+    padding:.5rem;
+    border-radius:1rem
 }
 
 
@@ -199,7 +202,7 @@ button {
 
 .article-page #articleTitle {
     max-width: 1000px;
-    margin: 0 auto 12px;
+    margin: 1rem auto 12px;
     padding: 0;
     background: none;
     color: #1f2937;
@@ -343,6 +346,9 @@ button {
     max-width: 900px;
     margin: 40px auto 0;
     text-align: left;
+    border-top: 1px solid #ccc;
+    padding-top:1rem;
+
 }
 
 .reading-quiz h2 {
@@ -380,6 +386,31 @@ button {
 
 .answers input {
     margin-right: 8px;
+}
+#checkAnswers {
+    display: block;
+    margin: 30px auto 0;
+}
+
+
+/* =========================================================
+   QUIZ ANSWER STYLES
+   ========================================================= */
+
+.reading-quiz label.quiz-selected {
+    background: #f0f0f0;
+}
+
+.reading-quiz label.quiz-correct {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.reading-quiz label.quiz-incorrect {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
 }
 
 

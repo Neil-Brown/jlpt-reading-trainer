@@ -1,0 +1,34 @@
+name: Generate Sitemap
+
+on:
+  push:
+    paths:
+      - "files.json"
+      - "generate-sitemap.js"
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate sitemap
+        run: node generate-sitemap.js
+
+      - name: Commit sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --cached --quiet || git commit -m "Update sitemap"
+          git push
