@@ -42,7 +42,7 @@ Clone the repository:
 git clone https://github.com/Neil-Brown/jlpt-reading-trainer.git
 ```
 
-Open the project folder and run it using a local web server such as **VS Code Live Server**.
+Open the project folder and run it using a local web server such as **VS Code Live Server**. or run `py -m http.server 8000` in  a terminal and open `http://localhost:8000`
 
 ---
 
