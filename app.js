@@ -29,7 +29,14 @@ search.addEventListener("input", () => {
 
 async function getTitle(file) {
 
-    const html = await fetch(file).then(r => r.text());
+    const response = await fetch(file);
+
+    if (!response.ok) {
+        throw new Error(`Failed to load ${file}: ${response.status}`);
+    }
+
+    const buffer = await response.arrayBuffer();
+    const html = new TextDecoder("utf-8").decode(buffer);
 
     const doc = new DOMParser().parseFromString(html, "text/html");
 
