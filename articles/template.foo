@@ -12,19 +12,68 @@
 
 <body class="article-page">
 
-<h1 id="articleTitle">
-ARTICLE TITLE
-</h1>
+    <h1 id="articleTitle">
+        ARTICLE TITLE
+    </h1>
 
-<div id="articleDate">
-ARTICLE DATE
-</div>
+    <div id="articleDate">
+        ARTICLE DATE
+    </div>
 
-<pre id="articleBody">
+    <pre id="articleBody">
+        ARTICLE TEXT
+    </pre>
 
-ARTICLE TEXT
+    <section class="vocabulary">
+        <h2>Reference Vocabulary</h2>
+        <dl>
+            <div class="vocab-item">
+                <dt><ruby>KANJI<rt>reading</rt></ruby></dt>
+                <dd>Chiyoda Ward</dd>
+            </div>
+        </dl>
+    </section>
 
-</pre>
+    <section class="reading-quiz">
 
+        <h2>TITLE</h2>
+
+        <div class="question" data-answer="c">
+
+            <p>
+                <strong>問題1.</strong>
+                QUESTION
+            </p>
+
+            <div class="answers">
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    ANSWER 1
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    ANSWER 2
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    ANSWER 3
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="d">
+                    ANSWER 4
+                </label>
+
+            </div>
+        </div>
+
+        <button id="checkAnswers">答えを確認</button>
+        <div id="quizResults"></div>
+
+    </section>
+    <script src="../js/quiz.js"></script>
 </body>
 </html>
