@@ -496,30 +496,29 @@ button {
     }
 
 
-    /* =====================================================
-       MOBILE ARTICLE TABLE
-       The table stays a real table.
-       It scrolls horizontally instead of becoming cards.
-       ===================================================== */
+  /* =====================================================
+   MOBILE ARTICLE TABLE
+   Keep the table as a real table.
+   Scroll horizontally on small screens.
+   ===================================================== */
 
-    .article-table-wrapper {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
+.article-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 
-    .article-table {
-        width: 850px;
-        min-width: 850px;
-        font-size: 0.9rem;
-    }
+.article-table {
+    width: 850px;
+    min-width: 850px;
+    font-size: 0.9rem;
+}
 
-    .article-table th,
-    .article-table td {
-        padding: 8px 7px;
-    }
-
+.article-table th,
+.article-table td {
+    padding: 8px 7px;
+}
 
     /* =====================================================
        MOBILE READING QUIZ
@@ -642,4 +641,24 @@ button {
         padding: 13px 15px;
     }
 
+}
+@media (max-width: 700px) {
+
+    .article-table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .article-table {
+        width: 850px;
+        min-width: 850px;
+        font-size: 0.9rem;
+    }
+
+    .article-table th,
+    .article-table td {
+        padding: 8px 7px;
+    }
 }

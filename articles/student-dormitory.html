@@ -21,104 +21,44 @@
            Generic article table
            ========================= */
 
-        .article-table {
-            width: 100%;
-            max-width: 100%;
-            border-collapse: collapse;
-            margin: 0;
-            font-size: 1rem;
-            line-height: 1.6;
-            table-layout: fixed;
-        }
+       .article-table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    table-layout: fixed;
+}
 
-        .article-table th,
-        .article-table td {
-            border: 1px solid #aaa;
-            padding: 0.6em;
-            text-align: left;
-            vertical-align: top;
-            overflow-wrap: anywhere;
-            word-break: break-word;
-        }
+.article-table th,
+.article-table td {
+    border: 1px solid #aaa;
+    padding: 0.6em;
+    text-align: left;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
 
-        .article-table th {
-            font-weight: bold;
-        }
+.article-table th {
+    font-weight: bold;
+}
 
-        .article-table .table-name {
-            font-weight: bold;
-        }
+.article-table .table-name {
+    font-weight: bold;
+}
 
-        .article-notes {
-            margin: 1em 0 0;
-            padding: 0;
-        }
+.article-notes {
+    margin: 1em 0 0;
+    padding: 0;
+}
 
-        .article-notes p {
-            margin: 0 0 0.5em;
-            padding: 0;
-        }
+.article-notes p {
+    margin: 0 0 0.5em;
+    padding: 0;
+}
 
-
-        /* =========================
-           Mobile table
-           ========================= */
-
-        @media (max-width: 700px) {
-
-            .article-table,
-            .article-table thead,
-            .article-table tbody,
-            .article-table tr,
-            .article-table th,
-            .article-table td {
-                display: block;
-                width: 100%;
-            }
-
-            .article-table thead {
-                display: none;
-            }
-
-            .article-table tr {
-                border: 1px solid #aaa;
-                margin-bottom: 1.2em;
-                padding: 0.4em 0;
-                box-sizing: border-box;
-            }
-
-            .article-table td {
-                border: none;
-                border-bottom: 1px solid #ddd;
-                padding: 0.55em 0.8em 0.55em 7em;
-                position: relative;
-                min-height: 1.6em;
-                box-sizing: border-box;
-            }
-
-            .article-table td:last-child {
-                border-bottom: none;
-            }
-
-            .article-table td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 0.8em;
-                top: 0.55em;
-                width: 5.5em;
-                font-weight: bold;
-            }
-
-            .article-table .table-name {
-                font-size: 1.1rem;
-                padding-left: 0.8em;
-                border-bottom: 1px solid #aaa;
-            }
-
-            .article-table .table-name::before {
-                display: none;
-            }
-        }
     </style>
 </head>
 
@@ -133,7 +73,7 @@
 </div>
 
 <div id="articleBody">
-
+<div class="article-table-wrapper">
 <table class="article-table">
   <thead>
     <tr>
@@ -274,6 +214,7 @@
 
   </tbody>
 </table>
+</div>
 
 <div class="article-notes">
   <p>※医学部・歯学部・薬学部薬学科では、学部5・6年次の学生も対象に含まれます。</p>
