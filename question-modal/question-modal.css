@@ -1,0 +1,397 @@
+/* =========================================
+   Questions button
+   ========================================= */
+
+.question-modal-open {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 9998;
+
+    padding: 0.7rem 1.2rem;
+
+    border: none;
+    border-radius: 0.4rem;
+
+    background: var(--question-modal-primary);
+    color: #fff;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+}
+
+.question-modal-open:hover {
+    background: var(--question-modal-primary-hover);
+}
+
+
+/* =========================================
+   Modal overlay
+   ========================================= */
+
+.question-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+.question-modal.is-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-modal-window {
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   Modal window
+   ========================================= */
+
+.question-modal-window {
+    container-type: inline-size;
+     position: relative;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    background: var(--question-modal-background);
+    color: var(--question-modal-text);
+
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.question-modal-question > .ansDiv {
+    font-size: clamp(0.85rem, 1.5cqw, 1.25rem);
+}
+
+/* =========================================
+   Modal header
+   ========================================= */
+
+.question-modal-header {
+    cursor: move;
+    user-select: none;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.75rem 1rem;
+
+    background: var(--question-modal-primary);
+    color: #fff;
+
+    font-size: var(--question-modal-header-font-size);
+    font-weight: 600;
+}
+
+.question-modal-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    font-size: inherit;
+}
+
+.question-modal-font-minus,
+.question-modal-font-plus {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+
+    padding: 0.2rem 0.45rem;
+
+    background: transparent;
+    color: inherit;
+
+    font-size: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.question-modal-font-size {
+    min-width: 3.2rem;
+    text-align: center;
+
+    font-size: inherit;
+}
+
+.question-modal-close {
+    border: 0;
+    padding: 0;
+
+    background: transparent;
+    color: inherit;
+
+    font-size: 1.6em;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.question-modal-close:hover {
+    opacity: 0.7;
+}
+
+/* =========================================
+   Modal content
+   ========================================= */
+
+.question-modal-content {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+.question-modal-question {
+    min-height: 0;
+
+    overflow-y: auto;
+
+    padding: 1.25rem;
+}
+
+/* =========================================
+   Question menu
+   ========================================= */
+
+.question-modal-menu {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--question-modal-menu-background);
+    border-bottom: 1px solid var(--question-modal-border);
+}
+
+
+.question-modal-menu.is-collapsed {
+    padding: 0.35rem 0.5rem;
+}
+
+.question-modal-menu.is-collapsed .question-modal-menu-numbers {
+    display: none;
+}
+
+
+/* Question number buttons */
+
+.question-modal-menu-item {
+    flex-shrink: 0;
+    min-width: 2.75rem;
+    height: 2.5rem;
+    padding: 0 0.8rem;
+
+    border: 1px solid var(--question-modal-border);
+    border-radius: 0.5rem;
+
+    background: var(--question-modal-background);
+    color: var(--question-modal-text);
+
+    font-size: var(--question-modal-menu-font-size);
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.question-modal-menu-item:hover {
+    background: #eee;
+    border-color: #aaa;
+}
+.question-modal-menu-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.45rem;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.question-modal-menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.question-modal-menu.is-collapsed {
+    display: none;
+}
+
+
+/* Currently selected question */
+
+.question-modal-menu-item.is-selected {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.question-modal-menu-item.is-selected:hover {
+    background: #222;
+    border-color: #222;
+}
+
+
+/* =========================================
+   Selected question
+   ========================================= */
+
+.question-modal-question {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 1.25rem;
+}
+
+/* =========================================
+   Question menu
+   ========================================= */
+
+.question-modal-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.75rem 1rem;
+
+    background: var(--question-modal-menu-background);
+    border-bottom: 1px solid var(--question-modal-border);
+
+    overflow-x: auto;
+}
+
+
+/* Question number buttons */
+
+.question-modal-menu-item {
+    flex-shrink: 0;
+
+    min-width: calc(2.75rem * var(--question-modal-scale));
+    height: calc(2.5rem * var(--question-modal-scale));
+    padding: 0 calc(0.8rem * var(--question-modal-scale));
+
+    border: 1px solid var(--question-modal-border);
+    border-radius: calc(0.5rem * var(--question-modal-scale));
+
+    background: var(--question-modal-background);
+    color: var(--question-modal-text);
+
+    font-size: calc(1rem * var(--question-modal-scale));
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.question-modal-menu-item:hover {
+    background: var(--question-modal-menu-background);
+    border-color: var(--question-modal-primary);
+}
+
+
+/* Currently selected question */
+
+.question-modal-menu-item.is-selected {
+    background: var(--question-modal-primary);
+    color: #fff;
+    border-color: var(--question-modal-primary);
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.question-modal-menu-item.is-selected:hover {
+    background: var(--question-modal-primary-hover);
+    border-color: var(--question-modal-primary-hover);
+}
+
+/* =========================================
+   Resize handles
+   ========================================= */
+
+
+
+.question-modal-resize-x {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.question-modal-resize-y {
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: 0;
+    height: 10px;
+    cursor: ns-resize;
+    z-index: 10;
+}
+
+.question-modal-resize-xy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    cursor: nwse-resize;
+    z-index: 11;
+}
+.question-modal-question .question {
+    font-size: var(--question-font-size, 1rem);
+    padding:0 !important;
+    margin:0
+}
+
+.question-modal-question .answerLabel {
+    font-size: var(--question-font-size);
+}
+
+.question-modal-question .answerLabel {
+    cursor: pointer;
+    padding:0 !important
+}
+
+.question-modal-question .answerTitle{
+    display:none
+}
