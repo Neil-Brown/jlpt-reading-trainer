@@ -678,7 +678,7 @@ function open() {
          * The clone must not be treated
          * as an original quiz question.
          */
-
+        
         clone.classList.remove("ansDiv");
 
         /*
@@ -694,8 +694,18 @@ function open() {
             );
 
         clone.removeAttribute("id");
+        
 
         questionArea.appendChild(clone);
+        clone
+            .querySelectorAll(
+                'input[type="radio"]'
+            )
+            .forEach(input => {
+                input.name =
+                    `modal-q-${selectedQuestion}`;
+            });
+
 
         /*
          * Modal answer click proxy

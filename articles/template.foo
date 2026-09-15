@@ -51,22 +51,22 @@
 
             <div class="answers">
 
-                <label>
+                <label class="answerLabel">
                     <input type="radio" name="q1" value="a">
                     ANSWER 1
                 </label>
 
-                <label>
+                <label class="answerLabel">
                     <input type="radio" name="q1" value="b">
                     ANSWER 2
                 </label>
 
-                <label>
+                <label class="answerLabel">
                     <input type="radio" name="q1" value="c">
                     ANSWER 3
                 </label>
 
-                <label>
+                <label class="answerLabel">
                     <input type="radio" name="q1" value="d">
                     ANSWER 4
                 </label>
