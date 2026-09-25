@@ -88,17 +88,13 @@
     cursor: move;
     user-select: none;
     flex-shrink: 0;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0.75rem 1rem;
-
     background: var(--question-modal-primary);
     color: #fff;
-
-    font-size: var(--question-modal-header-font-size);
+    font-size: calc(var(--question-modal-header-font-size) / 1.75);
     font-weight: 600;
 }
 
@@ -114,15 +110,11 @@
 .question-modal-font-plus {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0.25rem;
-
     padding: 0.2rem 0.45rem;
-
     background: transparent;
     color: inherit;
-
     font-size: inherit;
     font-weight: 600;
-
     cursor: pointer;
 }
 
@@ -298,8 +290,8 @@
 .question-modal-menu-item {
     flex-shrink: 0;
 
-    min-width: calc(2.75rem * var(--question-modal-scale));
-    height: calc(2.5rem * var(--question-modal-scale));
+    min-width: calc(2rem * var(--question-modal-scale));
+    height: calc(2rem * var(--question-modal-scale));
     padding: 0 calc(0.8rem * var(--question-modal-scale));
 
     border: 1px solid var(--question-modal-border);
@@ -336,7 +328,9 @@
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
-
+.question-modal-menu-item{
+    font-size: calc(var(--question-modal-header-font-size) / 1.75);
+}
 .question-modal-menu-item.is-selected:hover {
     background: var(--question-modal-primary-hover);
     border-color: var(--question-modal-primary-hover);
